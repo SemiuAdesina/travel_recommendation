@@ -1,0 +1,286 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #4b0082, #ff69b4); /* Gradient for the entire page */
+}
+
+
+/* Header and Navigation Bar */
+header {
+    background: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.search-bar {
+    display: flex;
+    gap: 5px;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #0056b3;
+}
+
+/* Hero Section with Background Image */
+.hero-section {
+    height: 400px;
+    background: url('images/hero-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section h1 {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero-section p {
+    font-size: 18px;
+    margin: 10px 0 20px;
+}
+
+.book-now-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.book-now-btn:hover {
+    background-color: #218838;
+}
+
+/* Recommendations Section */
+#recommendation-results {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.city-card, .temple-card, .beach-card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.city-card img, .temple-card img, .beach-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.city-card h3, .temple-card h3, .beach-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.city-card p, .temple-card p, .beach-card p {
+    font-size: 14px;
+    color: #555;
+}
+
+/* About Us Section */
+.about-section {
+    padding: 20px;
+    background: url('images/about-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.team-section {
+    margin-top: 40px;
+}
+
+.team-section h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-card {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.team-card h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    background: url('images/contact-background.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+}
+
+.contact-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-section form {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section input, .contact-section textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact-section button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .social-media img {
+    width: 24px;
+    margin: 0 5px;
+}
+
+footer .social-media img:hover {
+    opacity: 0.7;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        margin-top: 10px;
+    }
+
+    .hero-section {
+        height: auto;
+        padding: 20px;
+    }
+
+    #recommendation-results div {
+        width: 100%;
+    }
+
+    .contact-section input, .contact-section textarea {
+        width: 100%;
+    }
+
+    .team-members {
+        flex-direction: column;
+        align-items: center;
+    }
+}
